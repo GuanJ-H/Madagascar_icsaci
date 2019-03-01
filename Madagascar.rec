@@ -1,7 +1,7 @@
 # booster from madagascar
 
 BootStrap: docker
-From: madagascar/m8r
+From: jdrew/madagascar
 
 %environment
 
