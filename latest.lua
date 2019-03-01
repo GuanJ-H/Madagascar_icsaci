@@ -1,18 +1,18 @@
 -- -*- lua -*-
 ------------------------------------------------------------------------
--- octave latest
+-- Madagascar latest
 ------------------------------------------------------------------------
 help([[
-octave
+Madagascar
 ]])
 
 -- Whatis description
-whatis('Description: High-level programming language')
-whatis('URL: https://www.gnu.org/software/octave')
-whatis('singularity pull shub://jpetucci/octave_icsaci:rec')
+whatis('Description: Madagascar is an open-source software package for multidimensional data analysis and reproducible computational experiments')
+whatis('URL: http://www.ahay.org')
+whatis('singularity pull shub://GuanJ-H/Madagascar_icsaci:rec')
 unsetenv("LD_PRELOAD")
 local octave = [==[
-/usr/bin/singularity run /path/to/singularity/image "$@";
+/usr/bin/singularity run /storage/home/gzh8/work/singularity/Madagascar/madagascar.img "$@";
 ]==]
 
-set_shell_function("octave",octave,octave)
+set_shell_function("madagascar",madagascar,madagascar)
