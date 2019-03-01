@@ -1,0 +1,17 @@
+# booster from madagascar
+
+BootStrap: docker
+From: madagascar/m8r
+
+%environment
+
+%post
+    #------------------------------------------------------------------------------
+    # Create local binding points for our ICS-ACI
+    #------------------------------------------------------------------------------
+    mkdir -p /storage/home
+    mkdir -p /storage/work
+    mkdir -p /gpfs/scratch
+    mkdir -p /gpfs/group
+    mkdir -p /var/spool/torque
+#
